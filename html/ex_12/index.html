@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Create user</title>
+</head>
+
+<body>
+  <h1>Create User</h1>
+  <hr />
+  <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+      <legend>User Form</legend>
+      <label for="username">
+        Username :
+        <input type="text" name="username" size="30" maxlength="12" />
+      </label>
+      <label for="password">
+        Password :
+        <input type="password" name="password" size="30" maxlength="8" placeholder="password">
+      </label>
+    </fieldset>
+
+    <p>Select your favourite superhero :)</p>
+
+    <input type="radio" name="superheros" id="batman" checked>Batman
+
+    <input type="radio" name="superheros" id="Superman">Superman
+
+    <input type="radio" name="superheros" id="Wonder woman"> Wonder woman
+
+    <input type="radio" name="superheros" id="Flash">Flash
+
+    <input type="radio" name="superheros" id="Thor">Thor
+
+    <input type="radio" name="superheros" id="Hulk">Hulk
+
+    <p>Select your favourite video game</p>
+
+    <input type="checkbox" name="video_games" value="Fifa" id="Fifa">Fifa
+
+    <input type="checkbox" name="video_games" value="NHL" id="NHL">NHL
+
+    <input type="checkbox" name="video_games" value="Resident_evil" id="Resident_evil"> Resident evil
+
+    <input type="checkbox" name="video_games" value="Uncharted" id="Uncharted">Uncharted
+
+    <input type="hidden" name="userid" value="2300">
+    <br>
+    <input type="image" name="login" src="img/register_button.png" alt="register button" width="100px">
+  </form>
+</body>
+
+</html>
