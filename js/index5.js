@@ -1,8 +1,8 @@
-firstName = 'Gagandeep';
-lastName = 'singh';
-age = 24;
-dateOfBirth = '05/16/1994';
-address = '267 St. Annes road';
+var firstName = 'Gagandeep';
+var lastName = 'singh';
+var age = 24;
+var dateOfBirth = '05/16/1994';
+var address = '267 St. Annes road';
 
 console.log(firstName);
 console.log(lastName);
