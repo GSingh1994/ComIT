@@ -1,4 +1,4 @@
-let firstname = 'Gagandeep';
+let firstName = 'Gagandeep';
 let greeting = 'Welcome';
 
-console.log(greeting + ' ' + firstname);
+console.log(greeting + ' ' + firstName);
