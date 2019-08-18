@@ -1,5 +1,7 @@
 let i = 1;
+let sum = 0;
 while (i < 1000) {
-    console.log(i += 1)
+    sum += i;
     i++
 }
+console.log(sum);

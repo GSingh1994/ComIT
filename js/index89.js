@@ -1,8 +1,6 @@
-let i = 1;
 let sum = 0;
-do {
+for (i = 1; i < 1000; i++) {
     sum += i;
-    i++
-} while (i < 1000)
+}
 
 console.log(sum);
