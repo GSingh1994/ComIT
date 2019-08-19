@@ -1,11 +1,10 @@
-let number = 1;
-let i = 1;
-let sum;
-
+let i = 0;
+let sum = 0;
 do {
-    sum = number += i;
-    i += 2
-}
-while (i < 1000)
+    if (i % 2 != 0) {
+        sum += i
+    }
+    i++;
+} while (i <= 1000)
 
 console.log(sum);
