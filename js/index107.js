@@ -1,5 +1,5 @@
 function biggerNumber(firstNumber, secondNumber) {
-    if (typeof firstNumber != 'number' && typeof secondNumber != 'number') {
+    if (typeof firstNumber != 'number' || typeof secondNumber != 'number') {
         console.log(`Please enter a valid number`)
     } else if (firstNumber > secondNumber) {
         console.log(`${firstNumber} is bigger than ${secondNumber}`)
@@ -12,3 +12,4 @@ function biggerNumber(firstNumber, secondNumber) {
 
 biggerNumber(6, 5);
 biggerNumber(2, 2);
+biggerNumber('sda', 3);
