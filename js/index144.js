@@ -6,4 +6,5 @@ let user = {
 console.log(user.username);
 console.log(user.password);
 
-// console.log((user.username).toUppercase());
+console.log(user.username.toUpperCase());
+console.log(user.password.replace(1960, ' '));
