@@ -5,4 +5,4 @@ let budget = tripExpensesArray.reduce(function (acc, curr) {
     Total trip budget: ${acc + curr}`)
 });
 
-// console.log(budget);
+console.log(budget);

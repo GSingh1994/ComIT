@@ -17,7 +17,10 @@ let player = {
     recoverLife: function () {
         if (this.lives > 99) {
             return;
-        } this.lives++
+        } else {
+        this.lives++
+            this.energy = 100
+        }
     }
 };
 
