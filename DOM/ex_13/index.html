@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let seconds = parseInt(prompt('Please input the number of seconds that you would like to stay in our site'));
+        let timer = setInterval(() => {
+            if (seconds > 0) {
+                seconds--;
+                console.log(`Your time in seconds: ${seconds}`);
+            } else {
+                console.log('Your session has expired, come again soon!');
+                clearInterval(timer);
+            }
+        }, 1000);
+
+
+        // setInterval((num) => {
+        //     timer -= 1000;
+        //     console.log(`You have ${timer} seconds left on this site`);
+        //     if (timer === 0) {
+        //         console.log('Your session has expired, come again soon!');
+        //         // break;
+        //     }
+        // }, timer);
+
+
+        // let myFunction = () => {
+        //     timer -= 1000;
+        //     console.log(`You have ${timer} milli-seconds left on this site`);
+        //     setTimeout(myFunction, timer);
+        //     if (timer === 0) {
+        //         clearTimeout(myFunction)
+        //     };
+        // };
+        // setTimeout(myFunction, timer);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
