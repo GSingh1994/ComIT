@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        alert('This program adds all the numbers you input');
+        let counter = 0;
+
+        let askUser = () => {
+            let confirmUser = confirm('Do you wanna input a number');
+
+            if (confirmUser) {
+                let num = parseInt(prompt('Please input a number'));
+                counter += num;
+                console.log(`The result so far is : ${counter}`)
+                askUser();
+            } else {
+                console.log('Good bye')
+            }
+        }
+
+        askUser();
+
+
+
+    //     let confirmUser = confirm('Do you wanna input a number');
+    //     // console.log(confirmUser);
+    //     let result = 0;
+    //     while (confirmUser) {
+    //         let askUser = parseInt(prompt('Please input a number'));
+    //             result += askUser;
+    //             console.log(`The result so far is : ${result}`)
+
+    //         // confirmUser = false;
+    //     };
+    //     // Loop doesn't stop executing
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
