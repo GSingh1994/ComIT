@@ -10,6 +10,7 @@
 
         alert('This program adds all the numbers you input');
         let counter = 0;
+        let totalInputs = 0;
 
         let askUser = () => {
             let confirmUser = confirm('Do you wanna input a number');
@@ -17,28 +18,15 @@
             if (confirmUser) {
                 let num = parseInt(prompt('Please input a number'));
                 counter += num;
+                totalInputs++;
                 console.log(`The result so far is : ${counter}`)
                 askUser();
             } else {
-                console.log('Good bye')
+                console.log(` Your final result is ${counter} \n The user input ${totalInputs} numbers \n The average is ${counter / 2}`)
             };
         };
 
         askUser();
-
-
-
-    //     let confirmUser = confirm('Do you wanna input a number');
-    //     // console.log(confirmUser);
-    //     let result = 0;
-    //     while (confirmUser) {
-    //         let askUser = parseInt(prompt('Please input a number'));
-    //             result += askUser;
-    //             console.log(`The result so far is : ${result}`)
-
-    //         // confirmUser = false;
-    //     };
-    //     // Loop doesn't stop executing
     </script>
 </head>
 
