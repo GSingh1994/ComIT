@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = () => {
+            const body = document.querySelector('body');
+            const numbers = [23, 35, 34, 54, 23, 12, 12, 3, 54, 56];
+            const list = document.createElement('ul');
+            numbers.forEach((num) => {
+                let listItem = document.createElement('li');
+                listItem.innerText = `Item ${num} as li element content`;
+                if (num % 2 === 0) {
+                    listItem.style.color = '#ddd';
+                } else {
+                    listItem.style.color = '#eee';
+                };
+                list.appendChild(listItem);
+                body.appendChild(list);
+            });
+        };
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
