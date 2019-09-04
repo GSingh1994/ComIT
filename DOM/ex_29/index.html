@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products</title>
+    <script>
+        window.onload = () => {
+            const list = document.querySelector('ul');
+
+            const banana = list.children.item(0);
+            const apple = list.children.item(1);
+            const peach = list.children.item(2);
+            const eggs = list.children.item(3);
+            const tomato = list.children.item(4);
+            const lettuce = list.children.item(5);
+            const milk = list.children.item(6);
+
+            list.removeChild(banana);
+            list.removeChild(apple);
+            list.removeChild(peach);
+            list.removeChild(eggs);
+            list.removeChild(tomato);
+            list.removeChild(lettuce);
+            list.removeChild(milk);
+        };
+
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>Bannana</li>
+        <li>Apple</li>
+        <li>Peach</li>
+        <li>Eggs</li>
+        <li>Tomatto</li>
+        <li>Lettuce</li>
+        <li>Milk</li>
+    </ul>
+</body>
+
+</html>
