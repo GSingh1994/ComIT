@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = () => {
+            const body = document.querySelector('body');
+            const names = [];
+
+            const askUser = () => {
+                const userNames = prompt('Please input your name');
+                if (userNames) {
+                    names.push(userNames);
+                    askUser();
+                }
+            };
+            askUser();
+
+            const list = document.createElement('ol');
+            names.forEach((name) => {
+                let listItem = document.createElement('li');
+                listItem.innerText = name;
+                list.appendChild(listItem);
+
+                if (names.length % 2 === 0) {
+                    listItem.style.color = 'red';
+                } else {
+                    listItem.style.color = 'green';
+                };
+
+            });
+
+            body.appendChild(list);
+        };
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
