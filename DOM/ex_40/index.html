@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events</title>
+    <script>
+        window.onload = () => {
+            const link = document.querySelector('a');
+            const colors = ['red', 'blue', 'green', 'gray', 'white'];
+            let counter = -1;
+
+            let currentColor = null;
+            link.onmouseover = () => {
+                counter++;
+                currentColor = colors[counter];
+                console.log(currentColor);
+                link.style.backgroundColor = currentColor;
+            };
+
+            link.onmouseout = () => {
+                alert(`The link background color is: ${currentColor}`)
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+</body>
+
+</html>
