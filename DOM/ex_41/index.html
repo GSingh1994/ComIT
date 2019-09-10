@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .striked {
+            text-decoration: line-through;
+        }
+
+        li {
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        window.onload = () => {
+            const list = document.createElement('ul');
+            const body = document.querySelector('body');
+            body.appendChild(list);
+            const weeklyChores = ['laundry', 'grocery', 'wash car', 'buy new house', 'do assignments', 'go to gym', 'clean my room', 'sleep', 'wash dishes', 'walk dog'];
+
+            weeklyChores.forEach((chore) => {
+                const listItem = document.createElement('li');
+                listItem.innerText = chore;
+                list.appendChild(listItem);
+                listItem.addEventListener('click', () => {
+                    listItem.classList.toggle('striked');
+                })
+            });
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
